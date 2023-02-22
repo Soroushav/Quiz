@@ -5,9 +5,9 @@ from .models import CustomUser
 
 
 class CustomUserAdmin(UserAdmin):
-    model = CustomUser
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
+    model = CustomUser
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
